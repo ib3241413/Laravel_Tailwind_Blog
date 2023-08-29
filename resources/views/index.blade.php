@@ -6,9 +6,11 @@
     <!--  HERO   -->
 
     <div class="hero-bg-image flex flex-col items-center justify-center">
-        <h1 class="text-gray-100 text-5xl uppercase font-bold pd-10 pb-16">Welcome to my blog</h1>
+        <h1 class="text-gray-100 text-5xl uppercase font-bold pd-10 pb-16 text-center">Welcome to my blog</h1>
         <a href="/" class="bg-gray-100 text-gray-700 py-4 px-4 rounded-lg font-bold uppercase text-xl">Start Reading</a>
     </div>
+    
+    <!--how to be an expert -->
 
     <div class="container sm:grid grid-cols-2 gap-15 mx-auto py-15">
         <div class="mx-2 md:mx-0">
@@ -30,6 +32,17 @@
 
         </div>
         
+    </div>
+
+    <!--blog categories-->
+    <div class="text-center p-15 bg-gray-700 text-gray-100">
+        <h2 class="text-2xl ">Blog Categories</h2>
+        <div class="container mx-auto sm:grid grid-cols-4 ">
+            <div class="font-bold text-3xl py-2">Ux Design Thinking </div>
+            <div class="font-bold text-3xl py-2">Programming Language </div>
+            <div class="font-bold text-3xl py-2">Graphic Design </div>
+            <div class="font-bold text-3xl py-2">Front-End Development</div>
+        </div>
     </div>
 
 
