@@ -20,6 +20,7 @@
             <div>
                 
                 By: <span class="text-gray-500 italic " >{{$post->user->name}}</span>
+                on <span class="text-gray-500 italic " >{{ date('d-m-Y', $post->updated_at->timestamp) }}</span>
 
                 <p class="text-l text-gray-700 py-8 leading-8">
                     {{$post->description}}
