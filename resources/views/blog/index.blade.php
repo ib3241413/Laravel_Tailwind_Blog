@@ -12,20 +12,20 @@
     
     <div class="container sm:grid grid-cols-2 gap-15 mx-auto py-15 px-5 border-b border-gray-300">
         <div class="flex">
-            <img  class="object-cover" src="{{$post->iamge}}" alt="">  
+            <img  class="object-cover" src="{{$post->image_path}}" alt="">  
         </div>
         
         <div>
                 <h2 class="text-gray-700 font-bold text-4xl py-5 md:pb-4 md:py-0"> {{$post->title}} </h2>
             <div>
                 
-                By: <span class="text-gray-500 italic " >Ibrahim Mardi</span>
+                By: <span class="text-gray-500 italic " >{{$post->user->name}}</span>
 
                 <p class="text-l text-gray-700 py-8 leading-8">
                     {{$post->description}}
                 </p>
                 
-                <a href="/" class="bg-gray-700 text-gray-100 py-4 px-5 rounded-lg font-bold uppercase text-l place-self-start  ">Read More</a>
+                <a href="/blog/{{$post->slug}}" class="bg-gray-700 text-gray-100 py-4 px-5 rounded-lg font-bold uppercase text-l place-self-start  ">Read More</a>
                 
             </div>
         </div>  
