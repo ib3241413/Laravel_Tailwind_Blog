@@ -5,21 +5,29 @@
 
   
     <div class="container m-auto text-center pt-15 pb-5 ">
-            <h1 class="text-6xl font-bold">Add New Post</h1>
+            <h1 class="text-6xl font-bold">Edit The Post</h1>
     </div>
 
     <div class="container m-auto text-center pt-15 pb-5 ">
-        <form action="/blog" method="POST" enctype="multipart/form-data">
-            @csrf
+        <form 
+            action="/blog/{{$post->slug}}"
+             method="POST" 
+             enctype="multipart/form-data">
+
+            @csrf       
+            @method('PUT')
         
             <input type="text"
             name="title"
-            placeholder="Title"
+            value="{{$post->title}}"
             class="w-full h-20 text-6xl rounded-lg shadow-lg border-b p-15 mb-5">
+             {{-- Note the value in the input  --}}
 
-            <textarea name="description"
-            placeholder="Description"
-            class="w-full h-60 text-2xl rounded-lg shadow-lg border-b p-15 mb-5"></textarea>
+            <textarea 
+            name="description"
+            class="w-full h-60 text-2xl rounded-lg shadow-lg border-b p-15 mb-5">
+            {{$post->description}}
+            </textarea>
 
             <div class="py-15 ">
                 <label 
